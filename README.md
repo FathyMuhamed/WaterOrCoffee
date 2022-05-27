@@ -1,3 +1,3 @@
 # Welcome to Water or Coffee.
 
-- [Link](https://remix.run/docs)
+- [Home](https://water-or-coffee.vercel.app/)
