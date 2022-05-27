@@ -48,7 +48,7 @@ export default function Index() {
           Add
         </button>
       </Form>
-      <div className='flex flex-row flex-wrap items-center justify-center w-full mx-auto text-2xl'>
+      <div className='grid justify-center w-full grid-cols-2 mx-auto text-2xl md:grid-cols-4 grid-items-center'>
         {drinks.map((drink) => (
           <Card key={drink.id} drink={drink} />
         ))}
@@ -67,7 +67,7 @@ function Card({ drink }: any) {
       <summary className='text-sm font-semibold leading-6 text-center select-none text-slate-900 dark:text-white'>
         {drink.name === "water" ? "💧" : "☕"}
       </summary>
-      <div className='mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400'>
+      <div className='mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400'>
         <span className='inline-block w-full'>{drink.name}</span>
         <span> {time} </span>
       </div>
