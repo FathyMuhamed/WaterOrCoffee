@@ -6,12 +6,12 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Drink {
   id        Int      @id @default(autoincrement())
   name      String
-  createdAt DateTime @default(now()) 
+  createdAt DateTime @default(now())
 }
