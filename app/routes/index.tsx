@@ -32,15 +32,19 @@ export default function Index() {
     <>
       <Form method='post' className='my-6 text-center'>
         <label htmlFor='drinkName'>
-          <span className='inline-block w-full text-2xl font-semibold border-b-2 sm:text-3xl '>
+          <span className='inline-block w-full text-2xl font-semibold border-b-2 sm:text-3xl'>
             Submit Drink Consumed Today
           </span>
-          <select name='drinkName' className='px-4 py-2 mt-4 w-28 bg-slate-500'>
+          <select
+            name='drinkName'
+            className='w-32 px-4 py-2 mt-4 rounded-full bg-slate-500'>
             <option value='water'>Water 💧</option>
             <option value='coffee'>Coffee ☕</option>
           </select>
         </label>
-        <button type='submit' className='px-4 py-2 ml-2 bg-slate-500'>
+        <button
+          type='submit'
+          className='px-4 py-2 mt-4 ml-2 rounded-full bg-slate-500'>
           Add
         </button>
       </Form>
@@ -58,7 +62,7 @@ function Card({ drink }: any) {
 
   return (
     <details
-      className='p-3 m-2 text-center rounded-lg open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg'
+      className='p-2 m-2 text-center rounded-lg open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg'
       open>
       <summary className='text-sm font-semibold leading-6 text-center select-none text-slate-900 dark:text-white'>
         {drink.name === "water" ? "💧" : "☕"}
